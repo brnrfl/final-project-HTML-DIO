@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiDev | antagens do SVG no Desenvolvimento</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="header">   
+        <div class="logo">
+            <a href="index.html"><svg fill="SteelBlue" width="250px" height="100px" xmlns="http://www.w3.org/2000/svg">
+                
+                <text x="20" y="75" font-family="Times New Roman" font-size="55" fill="#233540">Wiki</text>
+                
+                <g transform="translate(120, 10) scale(3.5)">
+                    <path d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525zM19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.473c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3zM9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899v2.85zm4.045-3.562H11.1v1.544h1.309v1.188H11.1v1.543h2.142v1.188h-2.498a.813.813 0 0 1-.833-.792V9.497a.813.813 0 0 1 .792-.832h2.539l-.002 1.187zm4.165 4.632c-.531 1.235-1.481 .99-1.906 0l-1.548-5.818h1.309l1.193 4.569 1.188-4.569h1.31l-1.546 5.818z"/>
+                </g>
+            </svg></a>
+        </div>
+    </header>
+
+    <div class="bar"></div>
+
+    <main class="content">
+        <nav class="sidebar">
+            <h2>Artigos</h2>
+            <ul>
+                <li><a href="HTML-descomplicado-basico.html">HTML Descomplicado I</a></li>
+                <li><a href="HTML-descomplicado-avançado.html">HTML Descomplicado II</a></li>
+                <li><a href="vantagens-svg.html">Vantagens do SVG</a></li>
+                <li><a href="">Artigo 4</a></li>
+                <li><a href="">Artigo 5</a></li>
+                <li><a href="">Artigo 6</a></li>
+                <li><a href="">Artigo 7</a></li>
+                <li><a href="">Artigo 8</a></li>
+                <li><a href="">Artigo 9</a></li>
+                <li><a href="">Artigo 10</a></li>
+            </ul>
+        </nav>
+
+        <article class="main">
+            <h1 id="title">Vantagens do SVG no Desenvolvimento</h1>
+
+            <a class="author" href="https://deliciousbrains.com/svg-advantages-developers" target="_blank">
+            <span style="font-size: small;">Por Mike Davey -</span>
+            <time datetime="2023-04-06" style="font-size: small;"><i>06 de abril de 2023</i></time>
+            </a>
+            
+            <figure>
+            <img src="assets/images/capa.png" alt="Documento SVG">
+            <figcaption>Documento SVG</figcaption>
+            </figure>
+
+            <p>As imagens SVG têm vantagens que devem torná-las uma parte essencial do kit de ferramentas de qualquer desenvolvedor. Embora compartilhem algumas semelhanças com os tipos de imagem JPG, PNG e WebP, os SVGs têm um DNA muito diferente. Neste artigo, destacaremos as características que os diferenciam de outros tipos de imagem, como escalabilidade, tamanhos de arquivo pequenos e uma estrutura de metadados amigável para SEO. Também mostraremos como estilizar seus SVGs usando CSS em vez de um programa gráfico e destacaremos por que os SVGs são efetivamente "à prova de futuro" graças à escalabilidade indefinida.</p>
+            <p>As imagens SVG funcionam muito bem quando a imagem em si é relativamente simples. Elas são frequentemente usadas como logotipos, botões, ícones e barras de navegação, funções para as quais são ideais. Elas não são ideais para imagens com muitos detalhes, como fotografias. Para essas, geralmente é melhor optar por arquivos PNG ou WebP.</p>
+            <p>A maioria dos arquivos de imagem – incluindo PNG, WebP, JPG e TIFF – é baseada em bitmap. Também conhecidas como imagens rasterizadas, isso significa que consistem em uma quantidade fixa de pixels. Isso não apresenta problemas ao reduzir o tamanho da imagem, mas o problema rapidamente aparece se você tentar aumentar o tamanho. Você se depara com linhas serrilhadas, artefatos borrados e uma bagunça pixelada.</p>
+            <P>As imagens SVG não têm esse problema. O nome completo, Gráficos Vetoriais Escaláveis (Scalable Vector Graphics), nos dá uma pista sobre o porquê. As imagens vetoriais usam uma fórmula matemática para definir suas formas, bordas e cores, e depois exibem essas informações como pixels na sua tela. Isso as torna infinitamente escaláveis de uma maneira que uma imagem bitmap nunca poderá ser.</p>
+
+            <h2 id="title1">7 Razões Para Usar Gráficos Vetoriais Escaláveis</h2>
+            <ol>
+                <li><strong>Escalabilidade:</strong> Os SVGs são escaláveis e renderizam com perfeição em qualquer resolução. JPEGs, PNGs e GIFs não possuem essa capacidade.</li>
+                <li><strong>Tamanhos de Arquivo Menores:</strong> Imagens vetoriais costumam ser menores que as baseadas em bitmap.</li>
+                <li><strong>Estilização com CSS:</strong> SVGs incorporados podem ser estilizados usando CSS.</li>
+                <li><strong>Amigável para SEO:</strong> Permitem a adição de palavras-chave, descrições e links diretamente no código.</li>
+                <li><strong>Incorporação em HTML:</strong> Podem ser embutidos no HTML, permitindo cache e edição direta via CSS.</li>
+                <li><strong>À Prova de Futuro:</strong> Podem ser escalados indefinidamente sem perda de qualidade em novas tecnologias de exibição.</li>
+                <li><strong>Animação:</strong> Podem ser animados diretamente ou com CSS ou JavaScript.</li>
+            </ol>
+
+            <h2 id="title2">Como Funciona o SVG?</h2>
+            <p>Os arquivos SVG são escritos como arquivos de texto XML e podem ser criados e editados da mesma forma. Um exemplo simples de um arquivo SVG é:</p>
+
+            <div class="code">
+                <p class="p-code" style="text-align: left; font-family: 'Courier New', Courier, monospace;">&lt;<span class="code-tag">svg</span> <span class="code-atribute">xmlns</span>=<span class="code-data">"http://www.w3.org/2000/svg"</span>&gt;
+                <br />
+                &lt;<span class="code-tag">rect</span> <span class="code-atribute">width</span>=<span class="code-data">"250px"</span> <span class="code-atribute">height</span>=<span class="code-data">"250px"</span> <span class="code-atribute">fill</span>=<span class="code-data">"#0000FF"</span>/&gt;
+                <br />
+                &lt;/<span class="code-tag">svg</span>&gt;</p>
+            </div>
+            <figcaption>Esse arquivo renderiza um quadrado azul com 250 pixels de largura.</figcaption>
+
+            <p>Os arquivos WebP costumam ser menores que JPGs e PNGs, mas todos eles enfrentam o mesmo problema em termos de escalabilidade: a resolução máxima é determinada pelos pixels presentes na criação da imagem. Aumentar além desse ponto reduzirá significativamente a qualidade.</p>
+
+            <p>Com as imagens SVG, não há pixels; apenas matemática. Isso significa que os SVGs podem escalar indefinidamente sem redução na qualidade.</p>
+
+            <h2 id="title3">As Vantagens Impressionantes dos SVGs</h2>
+
+            <h3>Escalabilidade Perfeita!</h3>
+            <p>A maior vantagem do uso de um SVG em comparação a um PNG ou JPEG é que gráficos SVG escalam indefinidamente e permanecem nítidos em qualquer tamanho.</p>
+            <figure>
+            <img src="assets/images/img1.webp" alt="Aumentando quatro vezes o tamanho de um SVG sem perder qualidade verus aumentando quatro vezes o tamanho de um bitmap com perda de qualidade">
+            <figcaption>Escalabilidade de arquivo SVG <i>versus</i> arquivo PNG</figcaption>
+            </figure>
+
+            <h5>Um ponto a se considerar!</h5>
+            <p>Pequenos SVGs com poucos detalhes, como ícones de barra de navegação, podem parecer deslocados ou muito simples se ampliados para o tamanho de um banner de loja ou outdoor. Cada caso é diferente, mas o contexto e um bom olhar são importantes ao decidir se deve escalar um SVG.</p>
+
+            <h3 id="title4">Tamanhos de Arquivo Menores</h3>
+            <p>Essa é outra vantagem substancial. Devido à natureza das imagens vetoriais, os dados que determinam o tamanho do arquivo são as camadas, efeitos, máscaras, cores e gradientes utilizados.</p>
+            <p>Em comparação, as imagens baseadas em bitmap registram cada pixel da imagem, bem como a quantidade de cores usadas. Admitidamente, é um pouco mais complicado do que isso, mas o que se deve entender é que, na maioria das vezes, um arquivo de imagem baseado em bitmap será mais pesado do que seu equivalente em SVG.</p>
+            <p>Além disso, você pode minimizar o tamanho dos seus arquivos SVG comprimindo-os com gzip. Isso significa que menos bytes precisam ser enviados do servidor ou da CDN se a compressão gzip estiver habilitada.</p>
+            <figure>
+            <img src="assets/images/img2.webp" alt="Comparação do tamanho de diferentes arquivos de imagem. SVG igual a 9 kbytes, PNG igual a 25 kbytes e JPEG igual a 53 kbytes">
+            <figcaption>Comparativo de tamanho de arquivos: SVG, PNG e JPEG</figcaption>
+            </figure>
+
+            <h3 id="title5">Estilização com CSS</h3>
+            <p>Isso mesmo. E isso significa que você não precisa saber usar nenhum software de design para fazer uma pequena modificação, como uma alteração de cor. Na verdade, se você já trabalhou com design web ou desenvolvimento frontend, provavelmente não terá dificuldades em adicionar um gradiente a uma forma ou aumentar a espessura de uma borda.</p>
+            <figure>
+            <img src="assets/images/img3.webp" alt="Caixa de presente em SVG sendo estilizada na cor azul com um laço amarelo em cima">
+            <figcaption>Estilizando SVG com CSS</figcaption>
+            </figure>
+
+            <h3 id="title6">Amigável para SEO</h3>
+            <p>A natureza baseada em XML dos SVGs oferece oportunidades para metadados muito além dos atributos “title” e “alt” oferecidos pela maioria dos tipos de imagem. Palavras-chave, descrições e links podem ser incluídos em arquivos SVG, tornando o conteúdo mais reconhecível para motores de busca e melhorando a acessibilidade geral.</p>
+
+            <h3 id="title7">Incorporação em HTML</h3>
+            <p>SVGs podem ser incorporados diretamente no código HTML, ao contrário de outros tipos de imagem que precisam ser baixados do servidor como um recurso externo. Isso permite que eles sejam pesquisados e indexados. Você também pode modificar o estilo desse SVG usando CSS. Além disso, se você estiver armazenando em cache suas páginas HTML, isso significa que os SVGs incorporados também serão automaticamente armazenados em cache.</p>
+
+            <h3 id="title8">À Prova de Futuro</h3>
+            <p>A escalabilidade dos SVGs efetivamente os torna à prova de futuro. Houve um tempo em que a densidade de pixels era um tema quente na comunidade de design. Novos celulares e tablets estavam se tornando disponíveis, com displays ricamente detalhados... e a maioria dos JPGs e PNGs usados em sites de repente parecia horrível em dispositivos móveis.</p>
+            <p>A solução? Gerar outra instância da imagem com o dobro da resolução e rotulá-la como “@2x”. Agora a imagem parece linda e nítida no mais recente iPhone!</p>
+            <p>Se você foi sensato, também detectou a resolução do usuário com antecedência e serviu a imagem “@2x” apenas se necessário, já que isso era mais custoso em termos de tamanho de arquivo.</p> 
+            <p>Pode parecer uma digressão, mas naquela época, telas mais novas com densidades de pixels mais altas estavam criando dores de cabeça adicionais tanto para designers quanto para desenvolvedores. A própria natureza de uma imagem SVG significa que é possível escalá-las para qualquer tamanho necessário.</p>
+
+            <h3 id="title9">Animação</h3>
+            <p>SVGs realmente se destacam nesse aspecto. A capacidade de editar SVGs diretamente com um editor de texto significa que eles podem ser animados, tornando muito fácil injetar interatividade em seu site. Essas animações podem ser tão simples ou tão complexas quanto você preferir. Assim como o HTML, os SVGs também são representados pelo DOM (modelo de objeto do documento), o que significa que podem ser manipulados com JavaScript também.</p>
+
+            <h2 id="title10">As Desvantagens do SVG</h2>
+            <p>Nada é perfeito. E há algumas situações em que você deve optar por imagens rasterizadas em vez de SVGs.</p>
+
+            <h3 id="title11">Imagens Complexas</h3>
+            <p>Mencionamos isso anteriormente, mas se você estiver lidando com fotografias, então você deve, sem dúvida, optar por uma imagem baseada em bitmap. Não há muitas situações em que você encontraria uma fotografia em SVG, portanto, é improvável que você tenha que tomar essa decisão.</p>
+            <p>Da mesma forma, existem situações em que um SVG complicado contém tantas formas, cores, gradientes e máscaras que ele realmente começa a superar um JPG ou PNG em tamanho de arquivo. É raro encontrar isso, mas é uma possibilidade definitiva.</p>
+
+            <h3 id="title12">Otimização de Arquivos SVG</h3>
+            <p>Isso depende de um pouco de cuidado ao criar SVGs em um aplicativo de design, como Adobe Illustrator ou Inkscape. Pastas de grupo vazias e camadas redundantes não utilizadas podem adicionar lixo desnecessário ao tamanho total do arquivo. Além disso, SVGs mais antigos geralmente contêm uma abundância de lixo na marcação e são consideravelmente mais pesados do que o necessário. Considere passar os SVGs por um minificador ao exportar durante o processo de design para evitar tais complicações.</p>
+            <p>Existem várias ferramentas de otimização disponíveis, incluindo uma ferramenta <a href="https://github.com/svg/svgo?_ga=2.169415268.475782360.1729172879-1868028446.1729172879" target="_blank">Node.js para otimizar arquivos SVG</a> e esta solução não-node chamada <a href="https://jakearchibald.github.io/svgomg/?_ga=2.7009143.475782360.1729172879-1868028446.1729172879" target="_blank">SVGOMG</a>.</p>
+            <p>Os SVGs podem ser consideravelmente mais pesados do que um PNG equivalente se não forem criados ou otimizados da maneira correta. Mas geralmente, o tamanho do arquivo será menor. Apenas não se desanime se você encontrar um SVG individual com o dobro do tamanho de arquivo de um PNG equivalente.</p>
+
+            <h2 id="title13">Ícones SVG São Seus Amigos</h2>
+            <p>Os ícones são onde todas as vantagens deste formato de arquivo realmente se tornam aparentes. Não é mais necessário ter múltiplos ícones em várias cores e tamanhos, o que simplifica enormemente o processo de design e desenvolvimento. Para articular isso ainda mais, vamos olhar para a vida antes da chegada dos SVGs…</p>
+            
+            <h3 id="title14">Ícones SVG <i>versus</i> Ícones PNG</h3>
+            <p>Antes dos SVGs se tornarem populares, os ícones eram, honestamente, um pouco problemáticos tanto para designers quanto para desenvolvedores. Na maioria das vezes, um produto apresentava mais de 20 ícones, e cada ícone exigia um estado ativo (geralmente a cor primária), um estado inativo/desativado e, ocasionalmente, estados adicionais (como um estado de hover).</p>
+            <p>Imagens bitmap não são editáveis usando CSS, então cada estado do ícone exigia seu próprio arquivo.</p>
+            <p>Quando as telas com maior densidade de pixels se tornaram comuns, também se tornou necessário gerar versões “@2x” e “@3x” dos ativos de imagem para displays de alta resolução.</p>
+            <p>As economias em tamanho de arquivo podem facilmente se acumular quando lidamos com muitos ícones. Como exemplo, podemos pegar um ícone SVG de coração dos <a href="https://fonts.google.com/icons" target="_blank">Material Icons</a> e decidir que queremos três variações de cor para representar um estado ativo, um estado inativo e um estado desativado.</p>
+            <figure>
+            <img src="assets/images/img4.webp" alt="Três corações em SVG. Estado ativo: preenchido com vermelho e sem cor de borda. Estado inativo: somente o traçado de borda vermelho e o preenchimento vazio. Estado desativado: preenchido com cinza claro e sem cor de borda.">
+            <figcaption>Ícones em SVG</figcaption>
+            </figure>
+            <p>Usando o estado ativo do nosso ícone, também podemos produzir os outros 2 estados do ícone ajustando o estilo CSS. Assim, precisamos apenas de um arquivo SVG para gerar todos os 3 ícones!</p>
+            <p>Precisaríamos de um arquivo independente para cada estado do ícone se estivéssemos dependendo de imagens bitmap.</p>
+            <p>Além disso, para garantir que as versões bitmap pareçam nítidas em todos os tipos de dispositivos, precisamos gerar um conjunto desses ícones com o dobro e o triplo das dimensões da resolução base (“@2x” e “@3x”, respectivamente).</p>
+            <p>Isso nos deixa com nove ícones PNG para gerenciar! Um único arquivo SVG nos daria resultados idênticos. Os ícones PNG totalizam 29KB. O único arquivo SVG é de 1KB.</p>
+            <p>É uma diferença impressionante. Claro, 29KB não parece muito considerável, mas isso se refere a um único ícone. Quando você tem 30 ícones, a diferença no tamanho do arquivo se torna mais complicada...</p>
+            <p><b>SVG:</b> 1KB * 30 = <b>30KB</b>.</p>
+            <p><b>PNG:</b> 29KB * 30 = <b>870KB</b>.</p>
+            <p>Isso representa um <b>2900%</b> de aumento em relação ao único SVG. Claro, esses são valores médios, mas ainda assim é um aumento tremendo no tamanho.</p>
+            <figure>
+            <img src="assets/images/img5.webp" alt="SVG utilizando apenas um arquivo de 1 kbyte para os ícones e PNG com diversos arquivos totalizando 29 kbytes para os mesmos ícones.">
+            <figcaption>Redução de quantidade e tamanho de arquivos devido ao SVG</figcaption>
+            </figure>
+            <p>Você pode geralmente esperar pelo menos uma redução de 50% no tamanho do arquivo ao optar por ícones SVG em vez de PNGs. Particularmente se você estiver otimizando seus ícones SVG e quiser que eles sejam renderizados perfeitamente em qualquer tipo de resolução ou display.</p>
+
+            <h2 id="title15">Conclusão</h2>
+            <p>Você pode geralmente esperar pelo menos uma redução de 50% no tamanho do arquivo ao optar por ícones SVG em vez de PNGs. Particularmente se você estiver otimizando seus ícones SVG e quiser que eles sejam renderizados perfeitamente em qualquer tipo de resolução ou display.</p>
+            <p>Além disso, você pode animar e fazer modificações no estilo dos seus SVGs sem precisar ou saber como usar um aplicativo de design como Photoshop.</p>
+        </article>
+
+        <nav class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#title">Sobre SVG</a></li>
+                <li><a href="#title1">Razões para usar SVG</a></li>
+                <li><a href="#title2">Como funciona?</a></li>
+                <li><a href="#title3">Escalabilidade</a></li>
+                <li><a href="#title4">Tamanho de Arquivo</a></li>
+                <li><a href="#title5">Estilização com CSS</a></li>
+                <li><a href="#title6">Amigável para SEO</a></li>
+                <li><a href="#title7">Incorporação em HTML</a></li>
+                <li><a href="#title8">À Prova de Futuro</a></li>
+                <li><a href="#title9">Animação</a></li>
+                <li><a href="#title10">Desvantagens</a></li>
+                <li><a href="#title11">Imagens Complexas</a></li>
+                <li><a href="#title12">Otimização de Arquivos</a></li>
+                <li><a href="#title13">Ícones em SVG</a></li>
+                <li><a href="#title14">Ícones SVG vs Ícones PNG</a></li>
+                <li><a href="#title15">Conclusão</a></li>
+            </ul>
+            <a href="#header"><button class="return-top-page" type="button">↑</button></a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <p><a href="https://wondermakers.com.br" target="_blank">Wonder Makers<sup>®</sup></a> 2024 – Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

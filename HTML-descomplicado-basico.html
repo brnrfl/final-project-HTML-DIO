@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiDev | HTML Descomplicado: Estrutura Básica</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="header">   
+        <div class="logo">
+            <a href="index.html"><svg fill="SteelBlue" width="250px" height="100px" xmlns="http://www.w3.org/2000/svg">
+                
+                <text x="20" y="75" font-family="Times New Roman" font-size="55" fill="#233540">Wiki</text>
+                
+                <g transform="translate(120, 10) scale(3.5)">
+                    <path d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525zM19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.473c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3zM9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899v2.85zm4.045-3.562H11.1v1.544h1.309v1.188H11.1v1.543h2.142v1.188h-2.498a.813.813 0 0 1-.833-.792V9.497a.813.813 0 0 1 .792-.832h2.539l-.002 1.187zm4.165 4.632c-.531 1.235-1.481 .99-1.906 0l-1.548-5.818h1.309l1.193 4.569 1.188-4.569h1.31l-1.546 5.818z"/>
+                </g>
+            </svg></a>
+        </div>
+    </header>
+
+    <div class="bar"></div>
+
+    <main class="content">
+        <nav class="sidebar">
+            <h2>Artigos</h2>
+            <ul>
+                <li><a href="HTML-descomplicado-basico.html">HTML Descomplicado I</a></li>
+                <li><a href="HTML-descomplicado-avançado.html">HTML Descomplicado II</a></li>
+                <li><a href="vantagens-svg.html">Vantagens do SVG</a></li>
+                <li><a href="">Artigo 4</a></li>
+                <li><a href="">Artigo 5</a></li>
+                <li><a href="">Artigo 6</a></li>
+                <li><a href="">Artigo 7</a></li>
+                <li><a href="">Artigo 8</a></li>
+                <li><a href="">Artigo 9</a></li>
+                <li><a href="">Artigo 10</a></li>
+            </ul>
+        </nav>
+
+        <article class="main"> 
+            <h1 id="title">HTML Descomplicado: Estrutura Básica</h1>
+
+            <a class="author" href="" target="">
+            <span style="font-size: small;">Por Bruno Souza -</span>
+            <time datetime="2023-04-06" style="font-size: small;"><i>18 de outubro de 2024</i></time>
+            </a>
+            
+            <figure class="imagem-capa">
+            <img src="assets/images/capa-basic.jpeg" alt="Logo do HTML 5">
+            <figcaption>HTML 5</figcaption>
+            </figure>
+
+            <h2 id="title0">1. Sobre o HTML</h2>
+            <p>O HTML, ou HyperText Markup Language, é a linguagem de marcação padrão utilizada para criar e estruturar páginas web. Desde sua criação na década de 1990, o HTML tem sido fundamental para a construção da web, permitindo que desenvolvedores e designers organizem conteúdo de maneira lógica e acessível.</p>
+            <p>Compreender o HTML é essencial para qualquer pessoa que deseje trabalhar no desenvolvimento web. Ele serve como a base sobre a qual outras tecnologias são construídas, como CSS (Cascading Style Sheets) para estilização e JavaScript para interatividade. O HTML não apenas define a estrutura de uma página, mas também fornece os elementos necessários para integrar outros recursos.</p>
+            
+            <h3 id="title1">1.1 Estrutura e Sintaxe do HTML</h3>
+            <p>A sintaxe do HTML é baseada em tags que delimitam diferentes partes do conteúdo. Cada tag possui um nome e pode incluir atributos que fornecem informações adicionais sobre o elemento. Por exemplo, a tag <code>&lt;a&gt;</code> é usada para criar links, enquanto a tag <code>&lt;img&gt;</code> é utilizada para inserir imagens.</p>
+
+            <h3 id="title2">1.2 O Que Esperar Neste Artigo</h3>
+            <p>Neste artigo, exploraremos a estrutura básica de um documento HTML, as principais tags utilizadas e as técnicas de formatação de texto que ajudam a criar páginas web atraentes e funcionais. Através dessa jornada, você adquirirá uma compreensão sólida dos fundamentos do HTML, preparando-se para avançar em suas habilidades de desenvolvimento web. Esse primeiro tópico agora estabelece uma introdução clara ao HTML sem concluir o artigo, mantendo um fluxo natural para os tópicos subsequentes. Se precisar de mais ajustes ou informações, estou à disposição!</p>
+
+            <h2 id="title3">2. Estrutura Básica de um Documento HTML</h2>
+            <p>A estrutura de um documento HTML é fundamental para garantir que os navegadores interpretem e exibam corretamente o conteúdo da página. Um documento HTML típico segue uma hierarquia específica de tags, que organizam as informações de maneira lógica e acessível. Vamos explorar cada uma dessas partes essenciais.</p>
+            <p>No HTML a estrutura básica é composta pela declaração do Doctype, pela tag <code>&lt;html&gt;</code>, pelo cabeçalho <code>&lt;head&gt;</code> e pelo corpo <code>&lt;body&gt;</code>. Compreender essa hierarquia é fundamental para criar páginas web eficazes e bem organizadas.</p>
+
+            <h3 id="title4">2.1 Declaração do Doctype</h3>
+            <p>Todo documento HTML deve começar com a declaração <code>&lt;!DOCTYPE html&gt;</code>. Essa linha informa ao navegador que o documento está utilizando HTML5, a versão mais recente da linguagem. A declaração do tipo de documento é crucial, pois ajuda o navegador a renderizar a página corretamente, garantindo compatibilidade com os padrões web.</p>
+
+            <h3 id="title5">2.2 A Tag <code>&lt;html&gt;</code></h3>
+            <p>Após a declaração do Doctype, a próxima tag é <code>&lt;html&gt;</code>, que envolve todo o conteúdo da página. Essa tag é o elemento raiz do documento e indica que tudo dentro dela será interpretado como HTML.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">!DOCTYPE</span> <span class="code-atribute">hmtl</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">hmtl</span>&gt;
+                    <br />
+                    <span class="code-comment">&nbsp;&nbsp;&lt;!-- Conteúdo vai aqui --&gt;</span>
+                    <br />
+                    &lt;/<span class="code-tag">hmtl</span>&gt;
+                </p>
+            </div>
+            <figcaption>Representação de DOCTYPE e tag html</figcaption>
+
+            <h3 id="title6">2.3 O Cabeçalho <code>&lt;head&gt;</code></h3>
+            <p>Dentro da tag <code>&lt;html&gt;</code>, encontramos a seção <code>&lt;head&gt;</code>. Essa parte do documento contém metadados que não são exibidos diretamente para os usuários, mas que são essenciais para o funcionamento da página. Os elementos comuns dentro do <code>&lt;head&gt;</code> incluem:</p>
+            <ul>
+                <li><strong><code>&lt;meta charset="UTF-8"&gt;</code></strong> : Define a codificação de caracteres, garantindo que todos os caracteres sejam exibidos corretamente.</li>
+                <li><strong><code>&lt;title&gt;</code></strong> : Especifica o título da página, que aparece na aba do navegador.
+                    Links para arquivos CSS e scripts JavaScript.</li>
+            </ul>
+            <p>Exemplo de uma seção <code>&lt;head&gt;</code>:</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">head</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">meta</span> <span class="code-atribute">charset</span>=<span class="code-data">"UTF-8"</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">title</span>&gt;Meu Site&lt;/<span class="code-tag">title</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">link</span> <span class="code-atribute">rel</span>=<span class="code-data">"stylesheet"</span> <span class="code-atribute">href</span>=<span class="code-data">"styles.css"</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">head</span>&gt;
+                </p>
+            </div>
+            <figcaption>Representação da tag head e seu conteúdo (meta, title e link)</figcaption>
+
+            <h3 id="title7">2.4 O Corpo <code>&lt;body&gt;</code></h3>
+            <p>A tag <code>&lt;body&gt;</code> contém todo o conteúdo visível da página, incluindo textos, imagens, vídeos e outros elementos interativos. É aqui que você adicionará todos os elementos que deseja que os usuários vejam e interajam.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">body</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">h1</span>&gt;Bem-vindo ao meu site!&lt;/<span class="code-tag">h1</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">p</span>&gt;Este é um parágrafo de exemplo.&lt;/<span class="code-tag">p</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">body</span>&gt;
+                </p>
+            </div>
+            <figcaption>Representação da tag body contendo título e parágrafo de exemplo</figcaption>
+
+            <p>Para ilustrar a estrutura básica de um documento HTML, veja o exemplo abaixo:</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">!DOCTYPE</span> <span class="code-atribute">hmtl</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">hmtl</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">head</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">meta</span> <span class="code-atribute">charset</span>=<span class="code-data">"UTF-8"</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">title</span>&gt;Meu Site&lt;/<span class="code-tag">title</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">head</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">body</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">h1</span>&gt;Bem-vindo ao meu site!&lt;/<span class="code-tag">h1</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">p</span>&gt;Este é um parágrafo de exemplo.&lt;/<span class="code-tag">p</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">body</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">hmtl</span>&gt;
+                </p>
+            </div>
+            <figcaption>Representação da estrutura básica de um documento HTML</figcaption>
+
+            <h2 id="title8">3. Principais Tags em HTML</h2>
+            <p>No HTML, as tags são os blocos de construção que definem a estrutura e o conteúdo das páginas web. Cada tag tem um propósito específico e pode incluir atributos que modificam seu comportamento ou aparência. Neste tópico, vamos explorar algumas das principais tags utilizadas em HTML.</p>
+
+            <h3 id="title9">3.1 Cabeçalhos</h3>
+            <p>As tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> são usadas para definir cabeçalhos de diferentes níveis, com <code>&lt;h1&gt;</code> sendo o mais importante e <code>&lt;h6&gt;</code> o menos.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">h1</span>&gt;Título Principal&lt;/<span class="code-tag">h1</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">h2</span>&gt;Subtítulo&lt;/<span class="code-tag">h2</span>&gt;
+                </p>
+            </div>
+            <figcaption>Tags h1 e h2 exemplificando título e subtítulo</figcaption>
+
+            <h3 id="title10">3.2 Parágrafos</h3>
+            <p>A tag <code>&lt;p&gt;</code> é utilizada para criar parágrafos, que são blocos de texto separados por quebras de linha. Essa tag ajuda a organizar o conteúdo em unidades de informação mais digeríveis.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">p</span>&gt;Este é um parágrafo de exemplo.&lt;/<span class="code-tag">p</span>&gt;
+                </p>
+            </div>
+            <figcaption>Tag p exemplificando um parágrafo em HTML</figcaption>
+
+            <h3 id="title11">3.3 Ênfases e Estilos</h3>
+            <p>Você pode aplicar diferentes estilos e ênfases ao texto usando as seguintes tags.</p>
+            <h4>3.3.1 Negrito</h4>
+            <p>A tag <code>&lt;strong&gt;</code> é usada para <strong>enfatizar texto com negrito</strong>, indicando que o conteúdo é importante.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">strong</span>&gt;Texto em Negrito&lt;/<span class="code-tag">strong</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de texto em negrito</figcaption>
+            <h4>3.3.2 Itálico</h4>
+            <p>A tag <code>&lt;em&gt;</code> é utilizada para <em>enfatizar texto com itálico</em>, geralmente indicando um tom mais sutil.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">em</span>&gt;Texto em Itálico&lt;/<span class="code-tag">em</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de texto em itálico</figcaption>
+
+            <details>
+                <summary>Observação</summary>
+                <p class="details-p">Além das tags <code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code>, existem também as tags <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code>, que aplicam negrito e itálico, respectivamente, mas sem a mesma ênfase semântica. Enquanto <code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code> transmitem um significado adicional sobre a importância do texto, <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code> são puramente estilísticas e não indicam ênfase.</p>
+            </details>
+
+            <h4>3.3.3 Sublinhado</h4>
+            <p>A tag <code>&lt;u&gt;</code> <u>sublinha o texto</u>, embora seu uso tenha diminuído em favor de outras formas de destaque.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">u</span>&gt;Texto Sublinhado&lt;/<span class="code-tag">u</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de texto sublinhado</figcaption>
+            <h4>3.3.4 Grifado</h4>
+            <p>A tag <code>&lt;mark&gt;</code> destaca o texto, geralmente com uma <mark>cor de fundo diferente</mark>.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">mark</span>&gt;Texto Grifado&lt;/<span class="code-tag">mark</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de texto grifado</figcaption>
+
+            <h3 id="title12">3.4 Listas</h3>
+            <p>As listas ajudam a organizar informações de maneira clara. Elas podem ser <b>ordenadas</b> ou <b>não ordenadas</b>.</p>
+            <h4>3.4.1 Listas Ordenadas</h4>
+            <p>Criadas com a tag <code>&lt;ol&gt;</code>, onde cada item é definido com <code>&lt;li&gt;</code>.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">ol</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">li</span>&gt;Item da lista ordenada&lt;/<span class="code-tag">li</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">li</span>&gt;Outro item&lt;/<span class="code-tag">li</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">ol</span>&gt;
+                </p>
+            </div>
+            <figcaption>Modelo de lista ordenada</figcaption>
+            <h4>3.4.2 Listas Não Ordenadas</h4>
+            <p>Criadas com a tag <code>&lt;ul&gt;</code>, também utilizando <code>&lt;li&gt;</code> para cada item.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">ul</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">li</span>&gt;Item da lista não ordenada&lt;/<span class="code-tag">li</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">li</span>&gt;Outro item&lt;/<span class="code-tag">li</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">ul</span>&gt;
+                </p>
+            </div>
+            <figcaption>Modelo de lista não ordenada</figcaption>
+
+            <h3 id="title13">3.5 Citações</h3>
+            <p>Para incluir citações ou trechos de texto destacados, você pode usar a tag <code>&lt;blockquote&gt;</code>, que geralmente é apresentada com recuo.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">blockquote</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;"Esta é uma citação famosa."
+                    <br />
+                    &lt;/<span class="code-tag">blockquote</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de citação com blockquote</figcaption>
+
+            <h3 id="title14">3.6 Links e Imagens</h3>
+            <h4>3.6.1 Links</h4>
+            <p>A tag <code>&lt;a&gt;</code> é usada para criar hyperlinks, permitindo que os usuários naveguem entre páginas ou sites.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">a</span> <span class="code-atribute">href</span>=<span class="code-data">"https://site.com"</span>&gt;Visite nosso site!&lt;/<span class="code-tag">a</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de hyperlink com tag a</figcaption>
+            <h4>3.6.2 Imagens</h4>
+            <p>A tag <code>&lt;img&gt;</code> insere imagens na página. Ela requer o atributo <code>src</code> , que especifica a URL da imagem, e <code>alt</code> , que fornece uma descrição alternativa.</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">img</span> <span class="code-atribute">src</span>=<span class="code-data">"imagem.jpg"</span> <span class="code-atribute">alt</span>=<span class="code-data">"Descrição da imagem"</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo do uso da tag img</figcaption>
+
+            <h3 id="title15">3.7 Tabelas</h3>
+            <p>As tabelas são criadas usando as tags <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> (linha da tabela), <code>&lt;th&gt;</code> (cabeçalho da tabela) e <code>&lt;td&gt;</code> (célula da tabela).</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">table</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">tr</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-tag">th</span>&gt;Cabeçalho&lt;/<span class="code-tag">th</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-tag">th</span>&gt;Cabeçalho&lt;/<span class="code-tag">th</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;/<span class="code-tag">tr</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">tr</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-tag">td</span>&gt;Dado 1&lt;/<span class="code-tag">td</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-tag">td</span>&gt;Dado 2&lt;/<span class="code-tag">td</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;/<span class="code-tag">tr</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">table</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de tabela em HTML</figcaption>
+
+            <h2 id="title16">4. Exemplos Práticos</h2>
+            <p>Para consolidar o conhecimento adquirido até agora, vamos apresentar alguns exemplos práticos que ilustram a estrutura básica de um documento HTML e a aplicação das tags discutidas nos tópicos anteriores. Esses exemplos ajudarão a visualizar como as diferentes partes do HTML se juntam para criar uma página web funcional.</p>
+
+            <h3 id="title17">4.1 Exemplo de Estrutura Básica</h3>
+            <p>Aqui está um exemplo simples de um documento HTML completo, que incorpora as principais tags e elementos discutidos:</p>
+            <div class="code">
+                <p class="p-code">
+                    &lt;<span class="code-tag">!DOCTYPE</span> <span class="code-atribute">html</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">html</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">head</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">meta</span> <span class="code-atribute">charset</span>=<span class="code-data">"UTF-8"</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">title</span>&gt;Meu Primeiro Documento HTML&lt;/<span class="code-tag">title</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">head</span>&gt;
+                    <br />
+                    &lt;<span class="code-tag">body</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">h1</span>&gt;Bem-vindo ao Meu Site!&lt;/<span class="code-tag">h1</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">p</span>&gt;Este é um parágrafo de exemplo que demonstra a estrutura básica de um documento HTML.&lt;/<span class="code-tag">p</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">h2</span>&gt;Seções Importantes&lt;/<span class="code-tag">h2</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">ul</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-tag">li</span>&gt;Item da lista não ordenada&lt;/<span class="code-tag">li</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-tag">li</span>&gt;Outro item&lt;/<span class="code-tag">li</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;/<span class="code-tag">ul</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">a</span> <span class="code-atribute">href</span>=<span class="code-data">"https://www.exemplo.com"</span>&gt;Clique aqui!&lt;/<span class="code-tag">a</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">img</span> <span class="code-atribute">src</span>=<span class="code-data">"imagem.jpg"</span> <span class="code-atribute">alt</span>=<span class="code-data">"Descrição da imagem"</span>&gt;
+                    <br />
+                    &nbsp;&nbsp;&lt;<span class="code-tag">blockquote</span>&gt;"A prática leva à perfeição."&lt;/<span class="code-tag">blockquote</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">body</span>&gt;
+                    <br />
+                    &lt;/<span class="code-tag">html</span>&gt;
+                </p>
+            </div>
+            <figcaption>Exemplo de documento HTML simples</figcaption>
+
+            <h3 id="title17">4.2 Análise do Exemplo</h3>
+            <p>Neste exemplo, podemos observar:</p>
+            <ul>
+                <li><strong>Estrutura:</strong> O documento começa com a declaração <code>&lt;!DOCTYPE html&gt;</code> e inclui as tags <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code> corretamente.</li>
+                <li><strong>Cabeçalhos:</strong> Diferentes níveis de cabeçalhos são usados para organizar o conteúdo.</li>
+                <li><strong>Parágrafos e Listas:</strong> O texto é dividido em parágrafos e listas, facilitando a leitura.</li>
+                <li><strong>Links e Imagens:</strong> Um link externo e uma imagem são incluídos para enriquecer o conteúdo.</li>
+                <li><strong>Citações e Formatação:</strong> Um exemplo de citação é apresentado, juntamente com várias formas de formatação de texto.</li>
+                <li><strong>Tabela:</strong> Uma tabela simples é utilizada para mostrar como organizar dados.</li>
+            </ul>
+
+            <h3 id="title18">4.3 Agora é Sua Vez</h3>
+            <p>Para praticar, é importante que você crie seu próprio documento HTML seguindo o exemplo acima. Experimente adicionar novos elementos, como mais listas, imagens ou até mesmo vídeos. Isso ajudará a solidificar sua compreensão sobre como o HTML funciona na prática.</p>
+
+            <h2 id="title19">5. Conclusão</h2>
+            <p>Neste artigo, exploramos os fundamentos da estruturação HTML básica, abordando desde a importância do HTML até as principais tags e técnicas de formatação de texto. Através dos tópicos discutidos, você adquiriu uma compreensão sólida sobre como criar e organizar conteúdo em páginas web. Vamos recapitular os principais pontos abordados:</p>
+
+            <h3 id="">5.1 Recapitulação dos Tópicos</h3>
+            <ol>
+                <li><strong>Introdução ao HTML:</strong> Definimos o HTML como a linguagem de marcação essencial para a criação de páginas web e discutimos sua importância no desenvolvimento web.</li>
+                <li><strong>Estrutura Básica de um Documento HTML:</strong> Aprendemos sobre a declaração do Doctype, as tags <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>, que formam a espinha dorsal de qualquer documento HTML.</li>
+                <li><strong>Principais Tags em HTML:</strong> Exploramos as principais tags utilizadas no HTML, incluindo cabeçalhos, parágrafos, listas, links, imagens e tabelas. Também discutimos as diversas tags que permitem formatar texto, como negrito, itálico, sublinhado e citações, além da importância da semântica na escolha das tags.</li>
+                <li><strong>Exemplos Práticos:</strong> Apresentamos um exemplo completo de um documento HTML que incorpora todos os elementos discutidos, proporcionando uma visão prática do que foi aprendido.</li>
+            </ol>
+
+            <h3>5.2 Os Estudos Não Param</h3>
+            <p>Agora que você tem uma base sólida em HTML, é hora de praticar! Experimente criar suas próprias páginas web utilizando as tags e técnicas que exploramos. Além disso, considere estudar CSS para estilizar suas páginas e JavaScript para adicionar interatividade. O aprendizado contínuo nessas áreas permitirá que você crie experiências web mais ricas e dinâmicas.</p>
+            <p>Agradeço por acompanhar este artigo sobre estruturação HTML básica. Espero que tenha sido informativo e útil para sua jornada no desenvolvimento web. Continue explorando e aprendendo!</p>
+        </article>
+
+        <nav class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#title">HTML Básico</a></li>
+                <li><a href="#title1">2</a></li>
+                <li><a href="#title2">3</a></li>
+                <li><a href="#title3">4</a></li>
+                <li><a href="#title4">5</a></li>
+                <li><a href="#title5">6</a></li>
+                <li><a href="#title6">7</a></li>
+                <li><a href="#title7">8</a></li>
+                <li><a href="#title8">9</a></li>
+                <li><a href="#title9">10</a></li>
+                <li><a href="#title10">11</a></li>
+            </ul>
+            <a href="#header"><button class="return-top-page" type="button">↑</button></a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <p><a href="https://wondermakers.com.br" target="_blank">Wonder Makers<sup>®</sup></a> 2024 – Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
