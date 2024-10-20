@@ -74,14 +74,14 @@ a:hover {
 }
 .anchors {
     border-left: solid 1px #cdcdcd;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 .sidebar {
     text-align: right;
     border-right: solid 1px #cdcdcd;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
